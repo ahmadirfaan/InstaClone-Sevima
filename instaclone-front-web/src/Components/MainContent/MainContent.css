@@ -1,0 +1,20 @@
+.statusbar_container {
+    height: 120px;
+    width: 615px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    margin-top: 25px;
+}
+
+.statusbar_status {
+    min-width: 55px;
+    min-height: 55px;
+}
+
+.status {
+    margin-top: 25px;
+}
+
+.statusbar_text {
+    font-size: 12px;
+}
