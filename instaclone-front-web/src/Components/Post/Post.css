@@ -1,0 +1,39 @@
+.post_container {
+    width: 615px;
+    border: 1px solid #dbdbdb;
+    background-color: white;
+    margin-top: 25px;
+}
+
+.post_header {
+    height: 60px;
+    margin-bottom: 1px solid #dbdbdb;
+}
+
+.post_image {
+    min-height: 30px;
+    min-width: 30px;
+    margin: 10px;
+} 
+
+.post_username {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.post_reactimage{
+    width: 25px;
+    margin: 5px;
+}
+
+.post_comment {
+    margin: 10px;
+}
+
+.post_commentbox {
+    height: 56px;
+    width: 608px;
+    border: 1px solid #dbdbdb;
+    font-size: 16px;
+    padding-left: 10px;
+}
