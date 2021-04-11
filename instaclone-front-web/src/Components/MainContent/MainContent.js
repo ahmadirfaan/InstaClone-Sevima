@@ -28,7 +28,6 @@ export default class MainContent extends Component {
                         <Suggestions/>
                     </Grid>
                     <Grid item xs={2}>
-                        efs
                     </Grid>
                  </Grid>
             </div>

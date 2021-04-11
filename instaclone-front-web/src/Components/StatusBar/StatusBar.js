@@ -2,6 +2,7 @@ import { Avatar } from '@material-ui/core';
 import React, { Component } from 'react';
 import './StatusBar.css';
 import statusimg from "../../images/pp1.png";
+import uploadimage from "../../images/statusadd.png";
 
 export default class StatusBar extends Component {
 
@@ -41,6 +42,7 @@ export default class StatusBar extends Component {
     render() {
         return (
             <div className="statusbar_container">
+                <img src={uploadimage} className="statubar_upload" width="55px" height="55px" />
                 {
                     this.state.statusList.map((item, index) => (
                         <div className="status">
@@ -49,7 +51,6 @@ export default class StatusBar extends Component {
                         </div>
                     ))
                 }
-
             </div>
         )
     }

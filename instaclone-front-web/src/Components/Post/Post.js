@@ -47,7 +47,7 @@ class Post extends Component {
                 {/* Merepresentasikan Header(Tampilan profil,dkk) */}
                 <div className="post_header">
                     <Avatar className="post_image" src="" />
-                    <div className="post_username" >{this.props.useNname}</div>
+                    <div className="post_username" >{this.props.userName}</div>
                 </div>
 
                 {/* Merepresentasikan Gambar yang dipos */}
