@@ -18,9 +18,32 @@ class SignUp extends Component {
             .then((userCredential) => {
                 // Signed in 
                 var user = userCredential.user;
-                console.log(this.state.emailId)
-                console.log(this.state.password)
-                console.log(user)
+                let payload = {
+                    "userId": user.uid,
+                    "userName": this.state.userName,
+                    "name": this.state.name,
+                    "profileImage": ""
+                }
+
+                const requestOptions = {
+                    method: "POST",
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                }
+
+                fetch("http://localhost:8081/users", requestOptions)
+                    .then(response => response.json())
+                    .then(data => {
+                        localStorage.setItem("users", JSON.stringify(user));
+                        window.location.reload()
+                    })
+                    .catch(error => {
+
+                    })
+
+                // console.log(this.state.emailId)
+                // console.log(this.state.password)
+                // console.log(user)
                 // ...
             })
             .catch((error) => {

@@ -34,6 +34,38 @@ export default class StatusBar extends Component {
             {
                 "username": "atmimnurrona",
                 "imageURL": "../../images/pp1.png"
+            },
+            {
+                "username": "irfaanhibatullah",
+                "imageURL": "../../images/pp1.png"
+            },
+            {
+                "username": "ahmadirfaan",
+                "imageURL": "../../images/pp1.png"
+            },
+            {
+                "username": "tutiwulandari",
+                "imageURL": "../../images/pp1.png"
+            },
+            {
+                "username": "atmimnurrona",
+                "imageURL": "../../images/pp1.png"
+            },
+            {
+                "username": "irfaanhibatullah",
+                "imageURL": "../../images/pp1.png"
+            },
+            {
+                "username": "ahmadirfaan",
+                "imageURL": "../../images/pp1.png"
+            },
+            {
+                "username": "tutiwulandari",
+                "imageURL": "../../images/pp1.png"
+            },
+            {
+                "username": "atmimnurrona",
+                "imageURL": "../../images/pp1.png"
             }
         ]
         this.setState({ statusList: data });
@@ -42,7 +74,7 @@ export default class StatusBar extends Component {
     render() {
         return (
             <div className="statusbar_container">
-                <img src={uploadimage} className="statubar_upload" width="55px" height="55px" />
+                <img src={uploadimage} className="statusbar_upload" width="55px" height="55px" />
                 {
                     this.state.statusList.map((item, index) => (
                         <div className="status">

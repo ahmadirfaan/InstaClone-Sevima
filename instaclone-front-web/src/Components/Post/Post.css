@@ -2,12 +2,13 @@
     width: 615px;
     border: 1px solid #dbdbdb;
     background-color: white;
-    margin-top: 25px;
+    margin-bottom : 25px;
 }
 
 .post_header {
     height: 60px;
-    margin-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    display: flex;
 }
 
 .post_image {
@@ -23,6 +24,7 @@
 
 .post_reactimage{
     width: 25px;
+    height: 25px;
     margin: 5px;
 }
 
@@ -33,7 +35,8 @@
 .post_commentbox {
     height: 56px;
     width: 608px;
-    border: 1px solid #dbdbdb;
+    border: 0px;
+    border-top: 1px solid #dbdbdb;
     font-size: 16px;
     padding-left: 10px;
 }

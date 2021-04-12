@@ -19,10 +19,12 @@ export default class SignIn extends Component {
             .then((userCredential) => {
                 // Signed in
                 var user = userCredential.user;
+                localStorage.setItem("users",JSON.stringify(user));
+                window.location.reload();
                 // ...
-                console.log(this.state.emailId)
-                console.log(this.state.password)
-                console.log(user)
+                // console.log(this.state.emailId)
+                // console.log(this.state.password)
+                // console.log(user)
             })
             .catch((error) => {
                 var errorCode = error.code;

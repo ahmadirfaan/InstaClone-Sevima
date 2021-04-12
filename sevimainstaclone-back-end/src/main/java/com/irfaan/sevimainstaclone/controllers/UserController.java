@@ -21,7 +21,6 @@ public class UserController {
 
     @GetMapping("/{userid}")
     private Users getUserDetails(@PathVariable("userid") String userId) {
-
         return userService.displayUserById(userId);
     }
 }
